@@ -1,0 +1,157 @@
+#Main-body {
+  /* The image used */
+  background-image: url('../assets/img/robert-stump-sAg60JDU1IU-unsplash.jpg');
+
+  /* Add the blur effect */
+  filter: blur(0.5px);
+  /* -webkit-filter: blur(8px); */
+
+  /* Full height */
+  height: 100vh;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  background-color:  rgb(42 85 85);
+  border: none;
+  box-shadow: none;
+  /* background-color:  red; */
+}
+.btn:hover {
+  background-color:  rgb(45 90 90);
+  border: none;
+  box-shadow: none;
+  /* background-color:  red; */
+}
+.btn:focus {
+  background-color:  rgb(45 90 90);
+  border: none;
+  box-shadow: none;
+  /* background-color:  red; */
+}
+.btn:active {
+  background-color:  rgb(45 90 90);
+  border: none;
+  box-shadow: none;
+  /* background-color:  red; */
+}
+#Main-body:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(42 85 85);
+  opacity: 0.4;
+  z-index: 0;
+}
+#nav-div {
+  color: #fff;
+  position: absolute;
+  z-index: 15px;
+  right: 10px;
+}
+
+#nav-div ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#nav-div ul li {
+  float: left;
+  display: block;
+}
+
+#nav-div ul li a {
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 19px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#nav-div ul li a:hover {
+  border-bottom: solid 2px #fff;
+}
+.login-div {
+  position: absolute;
+  z-index: 10px;
+  display: block;
+  color: #fff;
+  display: flex;
+  top: 80px;
+  /* height: 100vh; */
+  margin: auto;
+  width: 100vw;
+  /* border: solid; */
+}
+.login-div .text {
+  margin: auto;
+  height: 80vh;
+  background-color: rgb(0 0 0 / 85%);
+  display: block;
+  border: solid;
+  width: 400px;
+}
+.side {
+  height: 100%;
+  width: 65vw;
+  min-height: 0;
+  padding-bottom: 0;
+  /* z-index: 0; */
+}
+.side-overlay-text {
+  position: absolute;
+  z-index: 10px;
+  display: block;
+  color: #fff;
+  display: flex;
+  height: 100vh;
+}
+.side-overlay-text .text {
+  margin: auto 20px;
+  display: block;
+  /* border: solid; */
+  width: 700px;
+}
+
+.side:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 60%;
+  z-index: 1px;
+  background-color: rgb(0 0 0 / 85%);
+}
+@media (min-width: 992px) {
+  .side:before {
+    transform: skewX(-9deg);
+    transform-origin: top right;
+  }
+}
+.icon-flex{
+  border: solid;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.icon-flex span{
+  border: solid;
+  width: 50px;
+  font-size: 50px;
+
+}
+.icon-flex span i{
+  font-size: 30px;
+  color: red;
+}
